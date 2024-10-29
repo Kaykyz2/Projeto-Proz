@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.podcast {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    color: #03365F;
+}
+
+.title-line {
+    width: 60%;
+    height: 3px;
+    background-color: #03365F;
+    margin: 8px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.video-container {
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+.text {
+    width: 55%;
+}
+
+.description {
+    font-size: 0.875rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.suggestions-title {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    color: #03365F;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.suggestions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.suggestion-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.suggestion-info {
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.suggestion-info p {
+    font-size: 0.95rem;
+    color: #03365F;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.suggestion-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.suggestion-item a:hover {
+    color: #03365F;
+    text-decoration: underline;
+}
