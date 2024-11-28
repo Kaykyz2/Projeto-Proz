@@ -1,11 +1,13 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 .a {
     text-decoration: none;
 }
+
 .menuBar {
     height: 4rem;
     width: 100%;
@@ -17,7 +19,8 @@
     justify-content: center;
     align-items: center;
 }
-.menu{
+
+.menu {
     height: 4rem;
     width: 100%;
     display: flex;
@@ -25,23 +28,27 @@
     margin-top: 1rem;
     margin-left: 4rem;
 }
-.liMenu{
+
+.liMenu {
     list-style: none;
     display: inline;
     margin-right: 4rem;
     font-family: 'Roboto', sans-serif;
     color: #03365F;
 }
+
 .top {
     height: 20rem;
     width: 100%;
     margin-top: 4rem;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
+
 .banner {
     width: 95%;
 }
+
 .logoCentral {
     width: 100%;
     display: flex;
@@ -52,54 +59,63 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
 .news {
     width: 100%;
     margin-top: 4rem;
     display: flex;
     justify-content: space-around;
 }
+
 .newsBanner {
     width: 60%;
 }
-.imgBanner{
+
+.imgBanner {
     width: 100%;
     margin-bottom: 1rem;
 }
+
 .newsLink {
     width: 30%;
 }
-.imgTitle{
+
+.imgTitle {
     width: 100%;
     color: #03365F;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.link{
+
+.link {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1rem;
 }
-.linkTitle{
-  width: 90%;
-  font-size:1rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.linkDate{
+
+.linkTitle {
     width: 90%;
-    font-size:0.5rem;
-    margin-bottom: 1rem;
-}
-.linkContent{
-    width: 90%;
-    font-size:0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
-footer{
+.linkDate {
+    width: 90%;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.linkContent {
+    width: 90%;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+footer {
     height: 4rem;
     width: 100%;
     background-color: #C5CED4;
@@ -109,5 +125,4 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
