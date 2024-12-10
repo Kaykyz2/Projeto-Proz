@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Cadastro</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="menuBar">Versos & Atualidades</div>
-      <div class="menu">
-        <menu>
-          <a class="a" href="/"><li class="liMenu">HOME</li></a>
-          <a class="a" href="#news"><li class="liMenu">NOTICIAS</li></a>
-          <a class="a" href="#subscribe"><li class="liMenu">INSCREVA-SE</li></a>
-          <a class="a" href="#podcast"><li class="liMenu">PODCAST</li></a>
-          <a class="a" href="#about"><li class="liMenu">SOBRE NÓS</li></a>
-        </menu>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menuBar">Versos & Atualidades</div>
+    
+    <nav class="menu">
+      <ul>
+        <li class="liMenu"><a class="a" href="/">HOME</a></li>
+        <li class="liMenu"><a class="a" href="#news">NOTICIAS</a></li>
+        <li class="liMenu"><a class="a" href="#subscribe">INSCREVA-SE</a></li>
+        <li class="liMenu"><a class="a" href="#podcast">PODCAST</a></li>
+        <li class="liMenu"><a class="a" href="#about">SOBRE NÓS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h1>
+        Faça login ou se cadastre para fazer parte da comunidade Versos &
+        Atualidades e fique por dentro de tudo alem de poder interagir
+        conosco!
+      </h1>
+    </div>
+
+    <div class="login">
+      <div>
+        <form id="login-form" onsubmit="return login()">
+          <h2 id="titulo-login">Login</h2>
+          <label for="login-email">Email:</label>
+          <input type="text" id="login-email" name="email" required />
+
+          <label for="login-senha">Senha:</label>
+          <input type="password" id="login-senha" name="senha" required />
+
+          <button type="submit">LOGIN</button>
+        </form>
       </div>
-    </header>
 
-    <main>
-      <section>
-        <h1>
-          Faça login ou se cadastre para fazer parte da comunidade Versos &
-          Atualidades e fique por dentro de tudo alem de poder interagir
-          conosco!
-        </h1>
-      </section>
+      <div>
+        <form id="register-form" onsubmit="return register()">
+          <h2 id="titulo-register">Cadastre-se</h2>
+          <label for="register-name">Nome</label>
+          <input type="text" id="register-name" name="name" required />
 
-      <section class="login">
-        <div>
-          <form id="login-form" onsubmit="return login()">
-            <h2 id="titulo-login">Login</h2>
-            <label for="login-email">Email:</label>
-            <input type="text" id="login-email" name="email" required />
+          <label for="register-email">E-mail</label>
+          <input type="email" id="register-email" name="name" required />
 
-            <label for="login-senha">Senha:</label>
-            <input type="password" id="login-senha" name="senha" required />
+          <label for="register-senha">Senha</label>
+          <input type="password" id="register-senha" name="senha" required />
 
-            <button type="submit">LOGIN</button>
-          </form>
-        </div>
-        <div>
-          <form id="register-form" onsubmit="return register()">
-            <h2 id="titulo-register">Cadastre-se</h2>
-            <label for="register-name">Nome</label>
-            <input type="text" id="register-name" name="name" required />
+          <label for="register-confirma-senha">Confirma-senha</label>
+          <input type="password" id="register-confirma-senha" name="confirma-senha" required />
 
-            <label for="register-email">E-mail</label>
-            <input type="email" id="register-email" name="name" required />
+          <button type="submit">FINALIZAR</button>
+        </form>
+      </div>
+    </div>
+  </main>
 
-            <label for="register-senha">Senha</label>
-            <input type="password" id="register-senha" name="senha" required />
+  <footer class="footerPage">
+    <p class="textFooter">
+      ©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não
+      pode ser publicado, transmitido, reescrito ou redistribuído sem
+      autorização.
+    </p>
+  </footer>
+  <script src="/assets/js/login_Services.js"></script>
+</body>
 
-            <label for="register-confirma-senha">Confirma-senha</label>
-            <input
-              type="password"
-              id="register-confirma-senha"
-              name="confirma-senha"
-              required
-            />
-
-            <button type="submit">FINALIZAR</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footerPage">
-      <p class="textFooter">
-        ©2024 por GRUPO 6 PROZ. Todos os direitos reservados.Este conteúdo não
-        pode ser publicado, transmitido, reescrito ou redistribuído sem
-        autorização.
-      </p>
-    </footer>
-   <script src="/assets/js/login_Services.js"></script>
-  </body>
 </html>
