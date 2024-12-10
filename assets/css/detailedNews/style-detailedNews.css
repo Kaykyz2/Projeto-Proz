@@ -1,24 +1,21 @@
-* .HC {
+*  
+.HC {
     text-size-adjust: none;
-    border: 10%;
     outline: 0;
     font-style: normal;
     vertical-align: baseline;
     background: transparent;
     -webkit-font-smoothing: antialiased !important;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     padding-top: 50px;
     padding-left: 250px;
     padding-right: 2px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
     font-family: 'bree_serifregular',serif!important;
     line-height: 38px!important;
     font-size: 30px!important;
     font-weight: bold;
     color: rgb(51,51,51);
+    
 }
 .HC1{
     text-size-adjust: none;
@@ -28,10 +25,6 @@
     vertical-align: baseline;
     background: transparent;
     -webkit-font-smoothing: antialiased !important;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     padding-top: 0px;
     padding-left: 250px;
     padding-right: 2px;
@@ -50,10 +43,6 @@
     vertical-align: baseline;
     background: transparent;
     -webkit-font-smoothing: antialiased !important;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 20px;
     padding-top: 10px;
     padding-left: 250px;
     padding-right: 4px;
@@ -71,16 +60,10 @@
 .HC3{
     color: rgb(51,51,51);
     text-size-adjust: none;
-    border: 0;
-    outline: 0;
     font-style: normal;
     vertical-align: baseline;
     background: transparent;
     -webkit-font-smoothing: antialiased !important;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 50px;
     padding-top: 0px;
     padding-left: 100px;
     padding-right: 100px;
@@ -89,13 +72,14 @@
     line-height: 25px!important;
     font-size: 15px!important;
     font-weight: normal;
+    text-align: justify;
 }
 
 .M2I1{
     display: block;   
     margin-top: 5px;
     margin-right: auto;
-    margin-left: 300px;
+    margin-left: 440px;
     margin-bottom: 15px;
     border: 10%;
     padding: 50px;
