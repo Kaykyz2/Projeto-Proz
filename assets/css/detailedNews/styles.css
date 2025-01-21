@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+/* ========== Início header ========== */
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c5ced4;
+    color: #03365f;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+  .botao-logout {
+    width: 80px;
+    padding: 10px;
+    background-color: #04376144;
+    color: black;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  
+  .oculta {
+    visibility: hidden;
+  }
+  /* ========== Fim header ========== */
+  
+  /* ========== Início nav ========== */
+  
+  nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .menu-itens {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .menu-itens a {
+    color: #03365f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+   
+  }
+  
+  .menu-itens a:hover {
+    color: #004279;
+  }
+  
+  .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-hamburguer div {
+    width: 30px;
+    height: 3px;
+    background-color:  #03365f;
+    border-radius: 2px;
+    
+  }
+  
+  /* ========== Fim nav ========== */
+/* Estilos principais */
+.HC {
+    text-size-adjust: none;
+    outline: 0;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialiased !important;
+    padding-top: 50px;
+    padding-left: 250px;
+    padding-right: 2px;
+    padding-bottom: 25px;
+    font-family: 'bree_serifregular',serif!important;
+    line-height: 38px!important;
+    font-size: 30px!important;
+    font-weight: bold;
+    color: rgb(51,51,51);
+}
+
+.HC1 {
+    text-size-adjust: none;
+    border: 0;
+    outline: 0;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialiased !important;
+    padding-top: 0px;
+    padding-left: 250px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    font-family: Georgia, serif !important;
+    line-height: 25px !important;
+    font-size: 12px !important;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+    text-transform: uppercase;
+}
+
+.HC2 {
+    text-size-adjust: none;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialiased !important;
+    padding-top: 10px;
+    padding-left: 250px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+    font-family: Georgia, serif !important;
+    line-height: 30px !important;
+    font-size: 18px !important;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.HC3 {
+    color: rgb(51, 51, 51);
+    text-size-adjust: none;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialiased !important;
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    font-family: Georgia, serif !important;
+    line-height: 25px !important;
+    font-size: 15px !important;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.M2I1 {
+    display: block;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: 440px;
+    margin-bottom: 15px;
+    border: 10%;
+    padding: 50px;
+}
+
+.M2I2 {
+    display: block;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.M3I3 {
+    display: block;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+
+iframe {
+    border: none;
+}
+
+.insta {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para telas médias (tablets) */
+    .HC {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 24px;
+    }
+
+    .HC1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    .HC2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .HC3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .M2I1, .M2I2, .M3I3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .iframe-container {
+        padding: 5px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+   
+    .menuBar {
+        font-size: 1.5rem;
+      }
+      .menu-hamburguer {
+        display: flex; 
+        
+      }
+    
+      .menu-itens {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #c5ced4;
+        padding: 10px;
+        gap: 15px;
+      }
+    
+      .menu-itens.active {
+        display: flex; 
+      }
+    
+      .login-cadastro {
+        flex-direction: column; 
+        gap: 20px;
+      }
+    
+      .login,
+      .register {
+        max-width: 100%; 
+        margin: 0;
+      }
+      .footerPage {
+        margin-top: 2rem;
+      }
+    }
+
+    .HC {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .HC1 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 9px;
+    }
+
+    .HC2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .HC3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+
+    .M2I1, .M2I2, .M3I3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+
+    .iframe-container {
+        padding: 5px;
+    }
+
+    iframe {
+        visibility: hidden;
+    }
+
+    .imagem {
+        width: 0;
+        height: 0;
+    }
+

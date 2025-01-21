@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/login/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="oculta">oculto</div>
+      <div class="menuBar">Versos & Atualidades</div>
+      <div><button class="botao-logout" onclick="logout()">Logout</button></div>
+    </header>
+    <nav>
+      <div class="menu-hamburguer" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="menu-itens">
+        <li class="a"><a class="a" href="/home.html">HOME</a></li>
+        <li class="a"><a class="a" href="/login.html">INSCREVA-SE</a></li>
+        <li class="a"><a class="a" href="/podcast.html">PODCAST</a></li>
+        <li class="a"><a class="a" href="/about-us.html">SOBRE NÓS</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>
+          Faça login ou se cadastre para fazer parte da comunidade Versos &
+          Atualidades e fique por dentro de tudo, além de poder interagir
+          conosco!
+        </h1>
+      </section>
+
+      <section class="login-cadastro">
+        <div class="login">
+          <form id="login-form" onsubmit="return login()">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="text" id="login-email" name="email" required />
+
+            <label for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" name="senha" required />
+
+            <button type="submit">LOGIN</button>
+          </form>
+        </div>
+
+        <div class="register">
+          <form id="register-form" onsubmit="return register()">
+            <h2>Cadastre-se</h2>
+            <label for="register-name">Nome:</label>
+            <input type="text" id="register-name" name="name" required />
+
+            <label for="register-email">E-mail:</label>
+            <input type="email" id="register-email" name="email" required />
+
+            <label for="register-senha">Senha:</label>
+            <input type="password" id="register-senha" name="senha" required />
+
+            <label for="register-confirma-senha">Confirme sua senha:</label>
+            <input
+              type="password"
+              id="register-confirma-senha"
+              name="confirma-senha"
+              required
+            />
+
+            <button type="submit">FINALIZAR</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footerPage">
+      <p>
+        ©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não
+        pode ser publicado, transmitido, reescrito ou redistribuído sem
+        autorização.
+      </p>
+    </footer>
+
+    <script src="/assets/js/login_Services.js"></script>
+    <script src="/assets/js/menuBar_hamburguer.js"></script>
+  </body>
+</html>

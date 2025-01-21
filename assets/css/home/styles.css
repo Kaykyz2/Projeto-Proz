@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ========== Início header ========== */
+header {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c5ced4;
+    color: #03365f;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+  .botao-logout {
+    width: 80px;
+    padding: 10px;
+    background-color: #04376144;
+    color: black;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  
+  .oculta {
+    visibility: hidden;
+  }
+  /* ========== Fim header ========== */
+  
+  /* ========== Início nav ========== */
+  
+  nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .menu-itens {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .menu-itens a {
+    color: #03365f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+   
+  }
+  
+  .menu-itens a:hover {
+    color: #004279;
+  }
+  
+  .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-hamburguer div {
+    width: 30px;
+    height: 3px;
+    background-color:  #03365f;
+    border-radius: 2px;
+    
+  }
+  
+  /* ========== Fim nav ========== */
+
+.top {
+    height: 20rem;
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 95%;
+}
+
+.logoCentral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #03365F;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.news {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsBanner {
+    width: 60%;
+}
+
+.imgBanner {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.newsLink {
+    width: 30%;
+}
+
+.imgTitle {
+    width: 100%;
+    color: #03365F;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.linkTitle {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.linkDate {
+    width: 90%;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.linkContent {
+    width: 90%;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Rodapé */
+.footerPage {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 4rem;
+    bottom: 0;
+    
+  }
+
+@media (max-width: 800px) {
+  
+
+    .menuBar {
+      font-size: 1.5rem;
+    }
+    .menu-hamburguer {
+      display: flex; 
+      
+    }
+  
+    .menu-itens {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #c5ced4;
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    .menu-itens.active {
+      display: flex; 
+    }
+  
+    .login-cadastro {
+      flex-direction: column; 
+      gap: 20px;
+    }
+  
+    .login,
+    .register {
+      max-width: 100%; 
+      margin: 0;
+    }
+    .footerPage {
+      margin-top: 2rem;
+    }
+  }
