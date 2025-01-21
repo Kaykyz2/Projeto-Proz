@@ -1,4 +1,84 @@
-*  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+/* ========== Início header ========== */
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c5ced4;
+    color: #03365f;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+  .botao-logout {
+    width: 80px;
+    padding: 10px;
+    background-color: #04376144;
+    color: black;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  
+  .oculta {
+    visibility: hidden;
+  }
+  /* ========== Fim header ========== */
+  
+  /* ========== Início nav ========== */
+  
+  nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .menu-itens {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .menu-itens a {
+    color: #03365f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+   
+  }
+  
+  .menu-itens a:hover {
+    color: #004279;
+  }
+  
+  .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-hamburguer div {
+    width: 30px;
+    height: 3px;
+    background-color:  #03365f;
+    border-radius: 2px;
+    
+  }
+  
+  /* ========== Fim nav ========== */
+/* Estilos principais */
 .HC {
     text-size-adjust: none;
     outline: 0;
@@ -9,22 +89,12 @@
     padding-top: 50px;
     padding-left: 250px;
     padding-right: 2px;
-<<<<<<< HEAD:assets/css/detailedNews/style-detailedNews.css
     padding-bottom: 25px;
     font-family: 'bree_serifregular',serif!important;
     line-height: 38px!important;
     font-size: 30px!important;
     font-weight: bold;
     color: rgb(51,51,51);
-    
-=======
-    padding-bottom: 5px;
-    font-family: 'bree_serifregular', sans-serif !important;
-    line-height: 38px !important;
-    font-size: 30px !important;
-    font-weight: bold;
-    color: rgb(51, 51, 51);
->>>>>>> 02be695cac691275c299bca55438e037aa871939:assets/css/detailedNews/styles.css
 }
 
 .HC1 {
@@ -129,3 +199,131 @@ iframe {
     justify-content: center;
     padding: 20px;
 }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para telas médias (tablets) */
+    .HC {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 24px;
+    }
+
+    .HC1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    .HC2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .HC3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .M2I1, .M2I2, .M3I3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .iframe-container {
+        padding: 5px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+   
+    .menuBar {
+        font-size: 1.5rem;
+      }
+      .menu-hamburguer {
+        display: flex; 
+        
+      }
+    
+      .menu-itens {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #c5ced4;
+        padding: 10px;
+        gap: 15px;
+      }
+    
+      .menu-itens.active {
+        display: flex; 
+      }
+    
+      .login-cadastro {
+        flex-direction: column; 
+        gap: 20px;
+      }
+    
+      .login,
+      .register {
+        max-width: 100%; 
+        margin: 0;
+      }
+      .footerPage {
+        margin-top: 2rem;
+      }
+    }
+
+    .HC {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .HC1 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 9px;
+    }
+
+    .HC2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .HC3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+
+    .M2I1, .M2I2, .M3I3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+
+    .iframe-container {
+        padding: 5px;
+    }
+
+    iframe {
+        visibility: hidden;
+    }
+
+    .imagem {
+        width: 0;
+        height: 0;
+    }
+

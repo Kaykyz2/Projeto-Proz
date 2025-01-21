@@ -5,33 +5,81 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.menuBar {
-    height: 4rem;
+/* ========== Início header ========== */
+header {
+    height: 5rem;
     width: 100%;
-    background-color: #C5CED4;
-    color: #03365F;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c5ced4;
+    color: #03365f;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
+    padding: 15px 0;
+  }
+  .botao-logout {
+    width: 80px;
+    padding: 10px;
+    background-color: #04376144;
+    color: black;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  
+  .oculta {
+    visibility: hidden;
+  }
+  /* ========== Fim header ========== */
+  
+  /* ========== Início nav ========== */
+  
+  nav {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu {
-    height: 4rem;
-    width: 100%;
+    padding: 15px;
+  }
+  
+  .menu-itens {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-left: 4rem;
-}
-
-.liMenu {
-    list-style: none;
-    display: inline;
-    margin-right: 4rem;
-    color: #03365F;
-}
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .menu-itens a {
+    color: #03365f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+   
+  }
+  
+  .menu-itens a:hover {
+    color: #004279;
+  }
+  
+  .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-hamburguer div {
+    width: 30px;
+    height: 3px;
+    background-color:  #03365f;
+    border-radius: 2px;
+    
+  }
+  
+  /* ========== Fim nav ========== */
 
 .a {
     text-decoration: none;
@@ -74,7 +122,7 @@ h1 {
 .grupo {
     width: 40%;
     background-color: #c5ced48a;
-    border: 1px dotted #03365F;
+    /* border: 1px dotted #03365F; */
     margin: 5px;
     align-items: center;
 }
@@ -85,14 +133,56 @@ h1 {
     align-items: center;
 }
 
-footer {
-    height: 4rem;
+/* Rodapé */
+.footerPage {
     width: 100%;
-    background-color: #C5CED4;
-    color: #03365F;
-    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
     margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    bottom: 0;
+    
+  }
+  
+  @media (max-width: 800px) {
+    
+  
+    .menuBar {
+      font-size: 1.5rem;
+    }
+    .menu-hamburguer {
+      display: flex; 
+      
+    }
+  
+    .menu-itens {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #c5ced4;
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    .menu-itens.active {
+      display: flex; 
+    }
+  
+    .login-cadastro {
+      flex-direction: column; 
+      gap: 20px;
+    }
+  
+    .login,
+    .register {
+      max-width: 100%; 
+      margin: 0;
+    }
+    .footerPage {
+      margin-top: 2rem;
+    }
+  }

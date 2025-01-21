@@ -12,7 +12,25 @@
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+  <div class="oculta">oculto</div>
+  <div class="menuBar">Versos & Atualidades</div>
+  <div><button class="botao-logout" onclick="logout()">Logout</button></div>
+</header>
+
+<nav>
+  <div class="menu-hamburguer" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul class="menu-itens">
+    <li class="a"><a class="a" href="/home.html">HOME</a></li>
+    <li class="a"><a class="a" href="/login.html">INSCREVA-SE</a></li>
+    <li class="a"><a class="a" href="/podcast.html">PODCAST</a></li>
+    <li class="a"><a class="a" href="/about-us.html">SOBRE NÓS</a></li>
+  </ul>
+</nav>
 
   <section class="podcast">
     <div class="header">
@@ -22,10 +40,7 @@
 
     <div class="content">
       <div class="video-container">
-        <iframe width="600" height="300" src="https://www.youtube.com/embed/o-O1N9yxTLI?si=PJANUlP-pu7eAV3e"
-          title="Podcast Literário" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/o-O1N9yxTLI?si=hE818f7trKQSdhbT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="text">
         <p class="description">
@@ -128,6 +143,16 @@
       </div>
     </div>
   </section>
+  <footer class="footerPage">
+    <p>
+      ©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não
+      pode ser publicado, transmitido, reescrito ou redistribuído sem
+      autorização.
+    </p>
+  </footer>
+
+  <script src="/assets/js/login_Services.js"></script>
+  <script src="/assets/js/menuBar_hamburguer.js"></script>
 </body>
 
 </html>

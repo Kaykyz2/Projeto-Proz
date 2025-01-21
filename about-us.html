@@ -12,20 +12,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="menuBar">Versos & Atualidades</div>
-
-    <nav class="menu">
-      <ul>
-        <li class="liMenu"><a class="a" href="/">HOME</a></li>
-        <li class="liMenu"><a class="a" href="#news">NOTICIAS</a></li>
-        <li class="liMenu"><a class="a" href="#subscribe">INSCREVA-SE</a></li>
-        <li class="liMenu"><a class="a" href="#podcast">PODCAST</a></li>
-        <li class="liMenu"><a class="a" href="#about">SOBRE NÓS</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="oculta">oculto</div>
+  <div class="menuBar">Versos & Atualidades</div>
+  <div><button class="botao-logout" onclick="logout()">Logout</button></div>
+</header>
+<nav>
+  <div class="menu-hamburguer" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul class="menu-itens">
+    <li class="a"><a class="a" href="/home.html">HOME</a></li>
+    <li class="a"><a class="a" href="/login.html">INSCREVA-SE</a></li>
+    <li class="a"><a class="a" href="/podcast.html">PODCAST</a></li>
+    <li class="a"><a class="a" href="/noticias.html">NOTÍCIAS</a></li>
+    <li class="a"><a class="a" href="/about-us.html">SOBRE NÓS</a></li>
+  </ul>
+</nav>
 
   <div>
     <h1 class="titleProjeto">Integrantes grupo 6 - Projeto Integrador:</h1>
@@ -55,7 +60,7 @@
       <h2 class="nomesIntegrantes" id="nomes"><strong>KAYKY FERNANDO</strong></h2>
 
       <img class="fotos" id="foto"
-        src="https://media.licdn.com/dms/image/v2/D4D03AQFBmV_T8mMqGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672701508429?e=1735171200&v=beta&t=gqFs-pt4LYYDMqHyXD4Zxm8MELTmsTKxCmTSEhIFMPc"
+        src="./assets/img/KaykyLinkedin.jpg"
         alt="Foto Kayky Fernando Pereira" height="200" width="200">
 
       <div class="linksClicaveis">
@@ -75,7 +80,7 @@
       <h2 class="nomesIntegrantes" id="nomes"><strong>MARIA CRISTINA</strong></h2>
 
       <img class="fotos" id="foto"
-        src="https://media.licdn.com/dms/image/v2/D4D03AQG-ixVVbxGNNg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694880106993?e=1735171200&v=beta&t=Ka0N7ZMiDXQ4yLziOSfvE9K4czATSquQDswEbmNKXE8"
+        src="./assets/img/mariaLinkedin.jpg"
         alt="Foto Maria Cristina Dias" height="200" width="200">
 
       <div class="linksClicaveis">
@@ -95,7 +100,7 @@
       <h2 class="nomesIntegrantes" id="nomes"><strong>NATHÁLIA DORIGON</strong></h2>
 
       <img class="fotos" id="foto"
-        src="https://media.licdn.com/dms/image/v2/D4D03AQHZ0waGlzjvyg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727727095056?e=1735171200&v=beta&t=k-1jJJjtcIF1UXYbtIs4rBKZW7VhvFtjYuff1TKmK0w"
+        src="./assets/img/nathaliaLinkedin.jpg"
         alt="Foto Nathália Dorigon" height="200" width="200">
 
       <div class="linksClicaveis">
@@ -115,7 +120,7 @@
       <h2 class="nomesIntegrantes" id="nomes"><strong>FABRICIO ARAUJO</strong></h2>
 
       <img class="fotos" id="foto"
-        src="https://media.licdn.com/dms/image/v2/D4E03AQH5G3JaF6kGGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729975195303?e=1735776000&v=beta&t=_WvX73fwuOg5ocs-8AKyzK4RHAu2dS652hacO29_zds"
+        src="./assets/img/fabricioLinkedin.jpg"
         alt="Foto Fabricio Araujo" height="200" width="200">
 
       <div class="linksClicaveis">
@@ -133,7 +138,13 @@
 </body>
 
 <footer class="footerPage">
-  <p class="textFooter">©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não pode ser publicado, transmitido, reescrito ou redistribuído sem autorização.</p>
+  <p>
+    ©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não
+    pode ser publicado, transmitido, reescrito ou redistribuído sem
+    autorização.
+  </p>
 </footer>
-    <script src="./assets/js/about-us/engine-about-us.js" defer></script>
+
+<script src="/assets/js/login_Services.js"></script>
+<script src="/assets/js/menuBar_hamburguer.js"></script>
 </html>

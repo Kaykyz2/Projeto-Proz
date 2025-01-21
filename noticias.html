@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/css/detailedNews/style-detailedNews.css" rel="stylesheet">
-    <link href="/assets/css/home/style.css" rel="stylesheet"
+    <link href="./assets/css/detailedNews/styles.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet">
     <title>Versos & Atualidades</title>
 
 </head>
 
 <header>
-<div class= "menuBar">
-         Versos & Atualidades
-     </div>
-     <div class="menu">
-        <menu>
-            <a class = "a" href="/"><li class="liMenu">HOME</li></a>
-            <a class = "a" href="#news"><li class="liMenu">NOTICIAS </li></a>
-            <a class = "a" href="#subscribe"><li class="liMenu">INSCREVA-SE  </li></a>
-            <a class = "a" href="#podcast"><li class="liMenu">PODCAST  </li></a>
-            <a class = "a" href="#about"><li class="liMenu">SOBRE NÓS  </li></a>
-     </menu>
-</div>
-</header>
+    <div class="oculta">oculto</div>
+    <div class="menuBar">Versos & Atualidades</div>
+    <div><button class="botao-logout" onclick="logout()">Logout</button></div>
+  </header>
+  <nav>
+    <div class="menu-hamburguer" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="menu-itens">
+      <li class="a"><a class="a" href="/home.html">HOME</a></li>
+      <li class="a"><a class="a" href="/login.html">INSCREVA-SE</a></li>
+      <li class="a"><a class="a" href="/podcast.html">PODCAST</a></li>
+      <li class="a"><a class="a" href="/about-us.html">SOBRE NÓS</a></li>
+    </ul>
+  </nav>
 
 <body href="/assets/css/detailedNews/" class="body">
 
@@ -297,11 +300,20 @@
         </div>
 
         <!--Fim notícia 4-->
+        <footer class="footerPage">
+            <p>
+              ©2024 por GRUPO 6 PROZ. Todos os direitos reservados. Este conteúdo não
+              pode ser publicado, transmitido, reescrito ou redistribuído sem
+              autorização.
+            </p>
+          </footer>
+      
+          <script src="/assets/js/login_Services.js"></script>
+          <script src="/assets/js/menuBar_hamburguer.js"></script>
 
 </body>
+</html>
 
-<footer class="footerPage">
-    <p class="textFooter">©2024 por GRUPO 6 PROZ. Todos os direitos reservados.Este conteúdo não pode ser publicado, transmitido, reescrito ou redistribuído sem autorização.</p>
-</footer>
+
 
 
